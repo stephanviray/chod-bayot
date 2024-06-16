@@ -1,0 +1,275 @@
+body
+{
+    background-image: linear-gradient(160deg, #ffffff 5%, #ffffff 100%);
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.pad3
+{
+    padding: 0.75rem; /* 12px */
+}
+.mx
+{
+    margin-left: 1rem; /* 16px */
+    margin-right: 1rem; /* 16px */
+}
+.my
+{
+    margin-top: 1rem; /* 16px */
+    margin-bottom: 1rem; /* 16px */
+}
+.mxhalf
+{
+    margin-left: 0.5rem; /* 8px */
+    margin-right: 0.5rem; /* 8px */
+}
+
+#nav {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#nav #nav2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#nav1 {
+    height: 83px;
+    overflow: hidden;
+}
+
+#nav1 svg {
+    display: block;
+}
+
+#nav2 #links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 12px;
+    margin-right: 64px;
+    font-family: 'helvetica';
+}
+.nv1{
+    display: flex;
+}
+
+.ul1{
+    display: flex;
+    list-style-type: none;
+}
+
+.d1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+   
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sec
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.form_container
+{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 2px 2px 10px rgb(123, 123, 123);
+}
+.write {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #ffffff;
+}
+.inputbox input{
+    background: transparent;
+    border:none;
+}
+.btn
+{
+    border: 2px solid  transparent;
+    border-radius: 20px;
+    background-color: rgba(202, 202, 202, 0.56);
+    font-size:small;
+    color:rgb(0, 0, 0);
+    border: 1px solid whitesmoke;
+    width: 150px;
+    height: 32px;
+    margin-top: 30px;
+   
+    
+}
+#fh2
+{
+    left: 125px;
+}
+.form_container h2
+{
+   color:rgb(4, 1, 1);
+   font-size:larger;
+   border:2px solid transparent;
+   position: absolute;
+   top: 10px;
+   left: 99px;
+   background-color: rgba(255, 255, 255, 0.56);
+   border-radius: 20px;
+   border-left-width: 10px;
+   border-right-width: 10px;
+   font-weight: 600;
+   animation-name: coloring2;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+ 
+}
+
+@keyframes coloring2 {
+    0%
+    {
+        color: crimson;
+    }
+   
+    50%
+    {
+        color: rgb(60, 60, 245);
+    }
+    100%
+    {
+        color: crimson;
+    }
+    
+}
+.inputbox .city
+{
+ background-color: #494949a9;
+ color:white;
+ border-radius: 25px;
+}
+.txtar textarea
+{
+    margin-top:25px;
+    background-color: rgba(255, 255, 255, 0.135);
+    border-radius: 15px;
+}
+.form_container footer
+{
+    font-size: x-small;
+    position: absolute;
+    bottom: 0px;
+    left :50px;
+}
+.material-icons-outlined
+{
+    display:none;
+}
+
+.nv1 .ul1 li:hover
+{
+   border: 1px solid rgb(0, 0, 0);
+   background-color:rgb(0, 0, 0) ;
+   border-radius: 10px;
+}
+.nv1 .ul1 li:active
+{
+    border: 1px solid rgb(0, 0, 0);
+    background-color:rgb(238, 135, 135) ;
+    border-radius: 10px;  
+}
+.nv1 .ul1 li:active
+{
+    border: 1px solid rgb(238, 135, 135);
+    background-color:rgb(238, 135, 135) ;
+    border-radius: 10px;
+}
+@media (max-width:1199px) and (min-width: 820px) 
+{
+    .sec
+      {
+        flex-direction: column;
+     }
+
+     .nv1 li
+     {  margin-left: -35px;
+        margin-right: 47px;
+     }
+
+}
+@media (max-width:820px) 
+{
+    .sec
+    {
+      flex-direction: column;
+   }
+   /*hamburger css starts*/
+   .d1
+   {
+       width:100%;
+       text-align:left;
+   }
+   .material-icons-outlined
+   {
+    display: block ;
+    margin-right: 1rem ;
+    font-size: 2rem ;
+    position: fixed;
+    top: 20px;
+    right: 1px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(246, 158, 158);
+  }
+   .d1 .ul1
+   {
+    display: none ;
+    flex-direction: column ;
+    justify-content: flex-start ;
+    position : fixed ;
+    top:80px;
+    right:0;
+    z-index:10;
+    height:40vh ;
+    box-shadow: 0px 0px 5px #ffffff ;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+   }
+   .d1 ul li 
+   {
+    height:fit-content  ;
+    margin : 1rem ;
+   }
+   .d1 .active /*when by js onclick event we add the active class to the selected element i.e. the uli,
+    by this css we direct to the .active element inside thr .d1 element 
+    the element was previously .d1 .uli whose display was none.*/
+   {
+    display: flex;
+   }
+
+
+}
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"   rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+
+      
+    <title>Wellmeadows.</title>
+</head>
+<body>
+  <div id="nav">
+    <div id="nav1">
+        <svg width="106" height="83" viewBox="0 0 106 83" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="transform: translate(0px, 0px);">
+            <text x="0" y="35" font-family="Arial" font-size="13" font-weight="bold" fill="currentColor">WELLMEADOWS</text>
+            <defs>
+                <clipPath id="clip0_2228_162">
+                    <rect width="106" height="82.3538" fill="white"></rect>
+                </clipPath>
+            </defs>
+        </svg>
+        <svg width="62" height="63" viewBox="0 0 62 63" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="go1438215768" style="transform: translate(0px, 0px);">
+            <path
+                d="M46.8316 0C42.9105 0 39.1501 1.59236 36.3775 4.42677C33.605 7.26119 32.0474 11.1055 32.0474 15.114C32.0474 19.1224 33.605 22.9667 36.3775 25.8011C39.1501 28.6355 42.9105 30.2279 46.8316 30.2279C50.7526 30.2279 54.513 28.6355 57.2856 25.8011C60.0582 22.9667 61.6158 19.1224 61.6158 15.114C61.6158 11.1055 60.0582 7.26119 57.2856 4.42677C54.513 1.59236 50.7526 0 46.8316 0Z"
+                fill="currentColor"></path>
+            <path
+                d="M14.793 0C10.872 0 7.11154 1.59236 4.33897 4.42677C1.56639 7.26119 0.00878906 11.1055 0.00878906 15.114C0.00878906 19.1224 1.56639 22.9667 4.33897 25.8011C7.11154 28.6355 10.872 30.2279 14.793 30.2279C18.714 30.2279 22.4744 28.6355 25.247 25.8011C28.0196 22.9667 29.5772 19.1224 29.5772 15.114C29.5772 11.1055 28.0196 7.26119 25.247 4.42677C22.4744 1.59236 18.714 0 14.793 0Z"
+                fill="currentColor"></path>
+            <path d="M36.9805 32.7422L32.0366 37.7963L56.6819 62.9913L61.6258 57.9372L36.9805 32.7422Z"
+                fill="currentColor"></path>
+            <path d="M56.6836 32.7485L32.0383 57.9435L36.9822 62.9976L61.6275 37.8026L56.6836 32.7485Z"
+                fill="currentColor"></path>
+            <path d="M4.94386 32.7464L0 37.8005L24.6453 62.9955L29.5892 57.9414L4.94386 32.7464Z"
+                fill="currentColor"></path>
+            <path d="M24.647 32.7527L0.00170898 57.9477L4.94557 63.0018L29.5909 37.8068L24.647 32.7527Z"
+                fill="currentColor"></path>
+        </svg>
+    </div>
+    <div id="nav2">
+        <div id="links">
+            <a href="/wellmeadows/index.html">Home</a>
+            <a href="/wellmeadows/contact/index.html">Contact</a>
+            <a href="/wellmeadows/Hospital Appointment Form/index.html">Appointment <i class="ri-arrow-right-up-line"></i></a>
+            <a href="#">donate</a>
+        </div>  
+            
+        </div>
+    </div>
+
+
+  <section class="sec">
+
+    <!--First Form-->
+    <div class="form_container  mxhalf my">
+       <form action="">
+            <h2 class="" id="fh2"> Basic Details</h2>
+            <div class="namebox inputbox write mx my">
+              <label for="">First Name:</label>
+              <input type="text" id="fname" required placeholder="Enter First name" autofocus onchange="checkInp()">
+            </div>
+
+            <div class="namebox inputbox write mx my">
+              <label for="">Last Name:</label>
+              <input type="text" id="lname" required placeholder="Enter Last name" onchange="checkInp2()" >
+              
+            </div>
+         
+
+            <div class="gender inputbox mx my ">
+                 <label class="mx" for="gender">Gender:</label>
+                 <select class="city" name ="gender" id=" gender">
+                  <option value ="">Choose</option>
+                    <option value ="male">Male</option>
+                    <option value ="female">Female</option>
+                    <option value ="other">Other</option>
+                 </select>
+            </div>
+      
+            <div class="addressbox inputbox write mx my">
+              <label for="">Your Address:</label>
+              <input type="text" required placeholder="Enter Your Address">
+            </div>
+
+            <div class="phonenumb inputbox write mx my">
+              <label for="">Conatct Number:</label>
+              <input type="text" id="pnumb" required placeholder="" onchange="checkInp3()">
+            </div>
+
+             <div class="dob inputbox mx my ">  
+                <label for="patient_dob">DOB:</label>        
+                <input class="dt" type="date" name="patient_dob" id="select_dob" onchange="age()">
+             </div>
+
+             <div class="agebox inputbox write mx my">
+              <p id="message"></p>
+              <p class="invisible" id="disp_age">Your Age:</p>
+             </div>
+
+    </form>
+    </div>
+
+    <!--2nd form-->
+  
+    <div class="form_container  mxhalf my ">
+      <form action="">
+          
+           <h2 class=""> Book Appointment</h2>
+          
+
+          <div class="inputbox mx my ">
+
+            <label for="dept">OPD:</label>
+            <select id="opd" class="city"name="Specialist" >
+                <option value="general" selected>Choose OPD</option>
+            </select>
+          </div>
+          <div class="inputbox mx my ">
+
+            <label for="dept">Doctor's Name:</label>
+    <select class="city" name="doc" id="doc_sel">
+        <option value="" selected>Choose Doc.</option>
+        <option value="Dr. John Doe">Dr. Stephan Viray</option>
+        <option value="Dr. Jane Smith">Dr. Jims Pestaño</option>
+        <option value="Dr. Michael Brown">Dr. Chodorick Tingting</option>
+        <option value="Dr. Sarah Johnson">Dr. Robert Amparo</option>
+        <!-- Add more options as needed -->
+    </select>
+          </div>
+
+           <div class="date inputbox mx my ">  
+             <label for="">Appointment Date:</label>        
+             <input class="dt" type="date" name="date">
+           </div>
+             
+           <button class="btn" onclick="mysub()">Submit*</button>
+           <p id="texto"></p>
+           <footer>*Mandatory to fill all the Details Before Submitting</footer>
+
+   </form>
+   </div>
+ 
+   <!--3rd form-->
+   <div class="form_container  mxhalf my">
+    <form action="">
+         <h2 class="">Health Issues</h2>
+   
+         <div class="gender inputbox mx my ">
+              <label class="mx" for="category">Category:</label>
+              <select class="city" name ="category" id=" category">
+                <option value ="">Choose</option>
+                 <option value ="Infections">Infections</option>
+                 <option value ="Cardio">Cardio</option>
+                 <option value ="Ortho">Ortho</option>
+                 <option value ="Gastreo">Gastreo</option>
+                 <option value ="viral sickness">viral sickness</option>
+                 <option value ="Cough and Cold">Cough and Cold</option>
+                 <option value ="other">Other</option>
+              </select>
+         </div>
+   
+         <div class=" inputbox txtar ">
+          <label for="area">Write Down Your Issues Below:-</label>
+          <textarea id="area" name="area" rows="5" cols="25"></textarea>
+         </div>
+           
+     
+
+ </form>
+ </div>
+  
+  </section>
+
+
+    <script src="navbar.js"></script>
+</body>
+</html>
